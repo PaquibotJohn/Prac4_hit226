@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+}
+
+.council {
+    background-color: #2ebc99;
+    margin: 70px 250px;
+    overflow: hidden;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: left;
+}
+.museum {
+    background-color: #2ebc99;
+    margin: 70px 250px;
+    overflow: hidden;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.council,.museum:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.council h1, {
+  text-align: center;
+  font-size:24px;
+}
+.museum h1, {
+  text-align: center;
+  font-size:24px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+img {
+  width:100%;
+}
+.ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.council {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.museum {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+
+  @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
